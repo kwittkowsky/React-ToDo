@@ -9,7 +9,7 @@ export default function TodoItem() {
   return (
     <div className="todo-item">
       <input type="checkbox" />
-      <p>Hier kann eine Aufgabe stehen</p>
+      <p>Placeholder text here</p>
     </div>
   );
 }
