@@ -1,15 +1,14 @@
 import React from 'react';
 
 /**
- * New Component <TodoItem />
- * @return markup with checkbox and paragraph ()
- * Adding className="todo-item"
+ * Added probs
+ * get from parent as object (like probs.item.id)
  */
-export default function TodoItem() {
+export default function TodoItem(probs) {
   return (
     <div className="todo-item">
-      <input type="checkbox" />
-      <p>Placeholder text here</p>
+      <input type="checkbox" checked={probs.item.completed} />
+      <p>{probs.item.text}</p>
     </div>
   );
 }
